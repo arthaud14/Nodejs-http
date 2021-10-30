@@ -3,7 +3,7 @@ const port = 8000;
 
 const requestHandler = (request, response) => {
     console.log(request.url);
-    const parsedUrl.parse(request.url, true);
+    const parsedUrl = parse(request.url, true);
 
     const name = parsedUrl.query.name;
     const city = parsedUrl.query.city;
